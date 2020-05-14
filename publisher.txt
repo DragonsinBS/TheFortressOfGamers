@@ -1,0 +1,8 @@
+|1|2|5|Activision|
+|2|6|20|Bandai Namco Entertainment|
+|3|18|Capcom|
+|4|3|19|C D Projeckt|
+|5|17|13|Electronic arts|
+|6|9|15|Rockstar Games
+|7|8|16|10|4|11|14|Soney Interactive Entertainment|
+|8|7|12|1|Warner Bros|

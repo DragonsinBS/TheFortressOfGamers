@@ -1,0 +1,66 @@
+.navbar {
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    position: fixed;
+    list-style-type: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    overflow:hidden ;
+    
+    
+  }
+  
+.search_title{
+  font-family: 'Nova Cut', cursive;
+}
+  
+.navbar-item {
+    float: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+.navbar-item-container{
+    overflow: hidden;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.navbar-item-search{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    float: right;
+    
+    border: none;
+
+    font-size: 17px;
+  }
+
+  .navbar-item-search,.navbar-item-search>*{
+    margin-top: 1%;
+  }
+
+.content{
+    margin-top: 80px;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-content: center;
+}
+
+  .navbar-item a {
+    font-size: 25;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Nova Cut', cursive;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  .navbar-item a:hover {
+      
+    background-color: #111;
+  }

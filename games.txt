@@ -1,0 +1,20 @@
+|1|Batman:Arkham Knight|Action-adventure|
+|2|Call Of Duty:ww2|First-person Shooter|
+|3|Cyberpunk 2077|Role-playing|
+|4|Days Gone|Action-adventure|
+|5|Destiny 2|First-person Shooter|
+|6|Dragon Ball Z:Kakarot|Action role-playing|
+|7|Dying Light|Survival horror|
+|8|God Of War|Hack and slash|
+|9|GTA 5|Action-adventure|
+|10|Horizon zero dawn|Action role-playing|
+|11|Last of us|Survival horror|
+|12|Mortal Kombat 11|Fighting|
+|13|NFS heat|Racing|
+|14|Nioh|Hack and slash|
+|15|Red Dead Redemption 2|Action-adventure|
+|16|Spiderman|Action-adventure|
+|17|Star wars: jedi fallen order|Action-adventure|
+|18|Street Fighter 5|Fighting|
+|19|The Witcher 3|Action role-playing|
+|20|Tekken 7|Fighting|
