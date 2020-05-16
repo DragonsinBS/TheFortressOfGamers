@@ -1,9 +1,9 @@
 class basicfunction:
     buf=("*"*(80))+'\n'
-    def __init__(self,file_name,file_info):
+    def __init__(self,file_info):
         self.name=file_info["name"]
-        self.file_name=file_name
-        self.file=open(file_name,'r+')
+        self.file_name=file_info["file_name"]
+        self.file=open(self.file_name,'r+')
         self.field=file_info["field"]
         self.primary_key=file_info["primary_key"]
 

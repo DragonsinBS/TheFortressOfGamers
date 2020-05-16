@@ -6,4 +6,7 @@ file.close()
 #print(temp)
 
 
-
+file=open("pubFile.txt",'a')
+for x in range(0,40):
+    file.write(("*"*(80))+'\n')
+file.close()
