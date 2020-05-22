@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <form action="/insert" method="post">
+    <ul class="navbar">
+        <div class="navbar-item-container">
+            <li class="navbar-item"><a href="/">Home</a></li>
+        <li class="navbar-item"><a href="/insert">Add details</a></li>
+        
+        <li>
+
+        </li>
+
+        </div>
+
+
+      </ul>
+    <style>
+        .form-card{
+            margin-left: 10%;
+            margin-right: auto;
+            margin-top: 15%;
+            height: 300px;
+            width: 25%;
+            padding-top: 5%;
+            vertical-align: middle;
+            align-items: center;
+            background-color: rgba(10, 10, 10, 0.637);
+        }
+        body {
+  background-image: url({{url_for('static',filename='img/back_update.png')}});
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.form-card *{
+    margin: 5px;
+    border-radius: 5%;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    vertical-align: middle;
+    
+    
+display: block;
+}
+.form-card form{
+    margin: auto;
+    height: 90%;
+}
+    </style>
+    <div class="form-card">
+    <centre>
+
+    
+    <form  action="/insert" method="post">
         <input type="text" name="name">
         <input type="text" name="genre">
         <input type="text" name="writter">
@@ -16,5 +72,7 @@
         </select>
         <input type="submit">
     </form>
+</centre>
+    </div>
 </body>
 </html>

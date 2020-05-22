@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap" rel="stylesheet">
@@ -10,7 +10,7 @@
 </head>
 <style>
 body {
-  background-image: url("back.jpg");
+  background-image: url({{url_for('static',filename='img/back.jpg')}});
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -20,10 +20,9 @@ body {
 
     <ul class="navbar">
         <div class="navbar-item-container">
-            <li class="navbar-item"><a href="">Home</a></li>
-        <li class="navbar-item"><a href="">News</a></li>
-        <li class="navbar-item"><a href="">Contact</a></li>
-        <li class="navbar-item"><a href="">About</a></li>
+            <li class="navbar-item"><a href="/">Home</a></li>
+        <li class="navbar-item"><a href="/insert">Add details</a></li>
+        
         <li>
 
         </li>
@@ -35,8 +34,12 @@ body {
       <div class="content" style="margin-top: 20%">
           <p class="search_title" style="font-size: 70;color: white;text-align: center;margin-bottom: 2;" >Fortress of Gamers</p>
         <span  style="width:75%; align-content: center;padding:0;margin-left:20%;margin-right:20%">
-            <form action=""style="margin-left:24%;margin-right:20%;width:100%">
-                <input style="width:50%;height:5%" type="text" placeholder="Search">
+            <form action="/display"style="margin-left:24%;margin-right:20%;width:100%" method="POST">
+                <input style="width:50%;height:5%" type="text" placeholder="Search" name="name">
+                <select name="table_name" style="width:10%;height:5%">
+                  <option value="games">games file</option>
+                  <option value="publisher">publisher file</option>
+              </select>
                 <input type="submit" style="font-weight:bold;margin-left:0;color:white;font-size:27;background-color:rgba(0,0,0,0);position: absolute;max-height:inherit;padding:0 ;border:0;width:3%;height:5% ;margin-top:0;" class="material-icons" value="search">
             </form>
 

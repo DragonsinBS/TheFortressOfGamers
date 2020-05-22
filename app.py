@@ -11,7 +11,9 @@ for table_info in file_info:
 app=Flask(__name__)
 
 
-
+@app.route("/")
+def index():
+    return render_template("index.html")
 @app.route("/search") 
 def search():
     return render_template("search.html")
@@ -49,7 +51,7 @@ def update(pkey,table_name):
 def delete(pkey,table_name):
     if request.method=="GET":
         tables[table_name].delete(pkey)
-        return redirect(url_for("search"))
+        return redirect(url_for("index"))
 
 
 @app.route("/insert", methods=['GET','POST'])
@@ -60,3 +62,7 @@ def insert():
     table_name = request.form["table_name"]
     tables[table_name].insert(data)
     return redirect(url_for("display",table_name=table_name,pkey=data["name"]))
+
+if __name__=="__main__":
+    app.run(debug=True)
+    

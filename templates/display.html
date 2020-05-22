@@ -1,17 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>Search results for {{data.name}}</h1>
-    <b>Name</b>:{{data.name}}<br>
-    <b>Genre</b>:{{data.genre}}<br>
-    <b>Writter</b>:{{data.writter}}<br>
-    <a href="/{{data.table_name}}/update/{{ data.name }}">Update</a>
-    <a href="/{{data.table_name}}/delete/{{ data.name }}">Delete</a>
+    <ul class="navbar">
+        <div class="navbar-item-container">
+            <li class="navbar-item"><a href="/">Home</a></li>
+        <li class="navbar-item"><a href="/insert">Add details</a></li>
+        
+        <li>
+
+        </li>
+
+        </div>
+
+
+      </ul>
+    <style>
+
+        .display-card{
+            margin-left: 10%;
+            margin-right: auto;
+            margin-top: 15%;
+            height: 300px;
+            width: 25%;
+            padding-top: 3%;
+            padding-left: 5%;
+            vertical-align: middle;
+            align-items: center;
+            background-color: rgba(10, 10, 10, 0.637);
+        }
+        body {
+  background-image: url({{url_for('static',filename='img/disp_back2.jpg')}});
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.display-card *{
+    margin: 5px;
+    border-radius: 5%;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    vertical-align: middle;
     
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.897);
+    
+    
+
+}
+.btn{
+    display: inline-block;
+    background-color: #251a1cbb;
+    color: rgba(255, 255, 255, 0.856);
+    border-radius: 5%;
+    height: 25px;
+    width: 75px;
+    text-align: center;
+    text-decoration: none;
+}
+
+    </style>
+    <div class="display-card">
+    <centre style="margin-left:5% ;">
+
+        <h1>{{data.name}}</h1>
+        <br>
+        <b>Name</b>:{{data.name}}<br>
+        <b>Genre</b>:{{data.genre}}<br>
+        <b>Writter</b>:{{data.writter}}<br>
+        <a class="btn" href="/{{data.table_name}}/update/{{ data.name }}">Update</a>
+        <a class="btn" href="/{{data.table_name}}/delete/{{ data.name }}">Delete</a>
+    
+       
+</centre>
+    </div>
 </body>
 </html>
+
+

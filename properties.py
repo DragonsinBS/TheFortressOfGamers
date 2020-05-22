@@ -1,2 +1,2 @@
 file_info=[{"name":"games","file_name":"gameFile.txt","field":["name","genre","writter"],"primary_key":"name"},
-{"name":"publisher","file_name":"pubFile.txt", "field":["name","publisher"],"primary_key":"name"}]
+{"name":"publisher","file_name":"pubFile.txt", "field":["name","genre","writter"],"primary_key":"name"}]
