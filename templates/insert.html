@@ -45,10 +45,10 @@
     margin: 5px;
     border-radius: 5%;
     height: 25px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 2%;
-    vertical-align: middle;
+    align-content: center;
     
     
 display: block;
@@ -63,9 +63,12 @@ display: block;
 
     
     <form  action="/insert" method="post">
-        <input type="text" name="name">
-        <input type="text" name="genre">
-        <input type="text" name="writter">
+        <label for="fname" style="display:inline-block;color: #ffffff;" >Game name:</label>
+        <input type="text" name="name" style="display:inline-block"><br>
+        <label for="fname"style="display:inline-block;color: #ffffff;">Game genre:</label>
+        <input type="text" style="display:inline-block" name="genre"><br>
+        <label for="fname" style="display:inline-block;color: #ffffff;">Game writer:</label>
+        <input type="text" style="display:inline-block" name="writter"><br>
         <select name="table_name" >
             <option value="games">games file</option>
             <option value="publisher">publisher file</option>

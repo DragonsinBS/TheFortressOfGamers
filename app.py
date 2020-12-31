@@ -29,8 +29,9 @@ def display():
         table_name=request.form.get("table_name")
     
     data=tables[table_name].search(name)
+    if data is False:
+        return "file not found"
     data["table_name"]=table_name
-    
     return render_template("display.html",data=data)
 
 @app.route("/<string:table_name>/update/<string:pkey>", methods=['GET','POST'])
@@ -50,9 +51,10 @@ def update(pkey,table_name):
 @app.route("/<string:table_name>/delete/<string:pkey>", methods=['GET','POST'])
 def delete(pkey,table_name):
     if request.method=="GET":
-        tables[table_name].delete(pkey)
-        return redirect(url_for("index"))
-
+        if tables[table_name].delete(pkey):
+            return redirect(url_for("index"))
+        else:
+            return " record not found"
 
 @app.route("/insert", methods=['GET','POST'])
 def insert():

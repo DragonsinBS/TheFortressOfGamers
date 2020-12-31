@@ -54,7 +54,7 @@ class basicfunction:
             self.file.seek(pos,0)
             temp=self.file.readline()
             if temp[0]=='*':
-                return -1
+                return False
             item=temp.split('|')
             if item[0]==pkey:
                 return self.unpack(temp)

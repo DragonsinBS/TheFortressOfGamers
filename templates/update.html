@@ -36,7 +36,7 @@
             background-color: rgba(10, 10, 10, 0.637);
         }
         body {
-  background-image: url({{url_for('static',filename='img/back_update.png')}});
+  background-image: url({{url_for('static',filename='img/812285.jpg')}});
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -63,9 +63,10 @@ display: block;
 
     
         <form action="/{{table_name}}/update/{{ pkey }}" method="post">
-      
-            <input type="text" name="genre">
-            <input type="text" name="writter">
+            <label for="fname" style="display:inline-block;color: #ffffff;" >Game genre:</label>
+            <input type="text" name="genre" style="display:inline-block"><br>
+            <label for="fname" style="display:inline-block;color: #ffffff;" >Game writer:</label>
+            <input type="text" name="writter" style="display:inline-block"><br>
             <input type="submit">
         </form>
 </centre>
