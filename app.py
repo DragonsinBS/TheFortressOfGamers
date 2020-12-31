@@ -66,5 +66,5 @@ def insert():
     return redirect(url_for("display",table_name=table_name,pkey=data["name"]))
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=80, host='0.0.0.0')
     
