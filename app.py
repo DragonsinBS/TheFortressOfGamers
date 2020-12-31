@@ -31,6 +31,9 @@ def display():
     data=tables[table_name].search(name)
     if data is False:
         return "file not found"
+    if table_name=="games":
+        table_name= "writer"
+
     data["table_name"]=table_name
     return render_template("display.html",data=data)
 
